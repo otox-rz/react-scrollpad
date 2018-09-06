@@ -1,6 +1,10 @@
 # react-scrollpad
 > &lt;ScrollPad/> - get scrollbar with padding (when overflown)
 
+### installation
+
+> `npm install --save react-scrollpad`
+
 ### Usage
 
 ```jsx
@@ -40,4 +44,4 @@ className | PropTypes.string |
 
 ### Demo
 
-https://sanusart.github.io/react-scrollpad/
+> https://sanusart.github.io/react-scrollpad/

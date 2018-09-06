@@ -1,6 +1,6 @@
 {
   "name": "react-scrollpad",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "ScrollPad react component - detects scroll and pads the content from browser's scroll bar",
   "main": "dist/index.js",
   "scripts": {

@@ -9,15 +9,8 @@ export class ScrollPad extends React.Component {
   calculateMargin = (ref) => {
     const { pad } = this.props;
 
-    if(ref && ref.scrollHeight) {
+    if (ref && ref.scrollHeight) {
       return ref.scrollHeight > ref.clientHeight ? pad : '0';
-    }
-  };
-
-  calculateWidth = (ref) => {
-    if(ref && ref.scrollHeight) {
-      const scrollBarWidth = ref.offsetWidth - ref.clientWidth;
-      return this.calculateMargin(ref) !== '0' ? ref.clientWidth - parseInt(this.props.pad, 10) + scrollBarWidth : ref.clientWidth;
     }
   };
 
@@ -25,11 +18,11 @@ export class ScrollPad extends React.Component {
 
   render() {
     return React.cloneElement(React.Children.only(this.props.children), {
-      ref: (node) => { this.containerRef = node },
+      ref: (node) => { this.containerRef = node; },
       className: this.props.className,
       style: {
         [this.padDirection()]: this.calculateMargin(this.containerRef),
-        width: this.calculateWidth(this.containerRef),
+        width: 'auto',
         ...this.props.style
       }
     });

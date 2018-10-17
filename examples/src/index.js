@@ -59,6 +59,20 @@ const App = () => (
       </div>
 
     </div>
+
+    <div className="wide-page">
+      <div className="dynamic-wrapper">
+        <h2>I am with { ScrollPadTitle } on element with dynamic width</h2>
+        <ScrollPad>
+          <div>
+          <p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p>
+          <p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p>
+          <p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p><p>Scroll</p>
+          </div>
+        </ScrollPad>
+      </div>
+    </div>
+
   </div>
 );
 
